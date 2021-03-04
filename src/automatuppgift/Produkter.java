@@ -16,7 +16,7 @@ abstract public class Produkter {
 
 
 //Skapar konstruktor
-public Produkter(String name, int price, String description);{
+public Produkter(String name, int price, String description){
     this.name = name;
     this.price = price;
     this.description = description;
