@@ -5,29 +5,43 @@
  */
 package automatuppgift;
 
+
+
 /**
  *
  * @author olivi
  */
+//Klass Mat som ärver från Produkter och implementerar interface från Interface
 public class Mat extends Produkter implements Interface{
+    
+    
+    //Konstrtuktor tar in parametrar för Produkter-attribut samt sitt eget attribut.
     public Mat (String name, int price, String description){
+        //Använder Super för att kontakta Konstruktorn av abstrakta Produkter klassen
             super (name, price, description);
     }
-
+    
+    //Metod som implementerats ifrån interface Interface
     @Override
+    //Metod för att skriva ut beskrivning
     public void Description() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+        System.out.println(this.name + " med " + this.description);
+        System.out.println("Pris: " + this.price);           
+        }    
+    //Metod som implementerats ifrån interface Interface    
     @Override
-    public void Buy() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    //Metod för att bekräfta att köpet är genomfört, anropar metoden Use() innuti metoden
+    public void Buy() {       
+        System.out.println("Du har nu köpt en " + this.name);
+        Use();     
+            }
+    //Metod som implementerats ifrån interface Interface
     @Override
+    //Metod för att skriva ut hälsning, anropas från ovan metod
     public void Use() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        System.out.println("Smaklig måltid!");    }
+
+   
     
     
 }

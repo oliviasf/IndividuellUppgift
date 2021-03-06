@@ -10,8 +10,9 @@ package automatuppgift;
  * @author olivi
  */
 public interface Interface {
-    
+    //får ej inehålla atribut eller konstruktor
     void Description();
     void Buy();
     void Use();
+    
 }
