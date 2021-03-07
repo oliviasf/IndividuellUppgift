@@ -80,12 +80,14 @@ public class AutomatUppgift {
                         //Använderns input för köpfråga sparar i en int variabel
                         köp1 = scan1.nextInt();
                             //If-sats för användarens val
-                            if (köp1 == 0) {
+                            if (köp1 == 1) {
+                                //Anropar metoden Buy i klassen Mat samt hämtar indexposition i ArrayList
+                                maten.get(köp-1).Buy(); 
                                break;
                              }
                             else 
-                            //Anropar metoden Buy i klassen Mat samt hämtar indexposition i ArrayList
-                            maten.get(köp1-1).Buy();  
+                             
+                            break;
                         }
                     }  
                                                       
@@ -115,12 +117,14 @@ public class AutomatUppgift {
                         //Använderns input för köpfråga sparar i en int variabel
                         köp1 = scan1.nextInt();
                             //If-sats för användarens val
-                            if (köp1 == 0) {
+                            if (köp1 == 1) {
+                                //Anropar metoden Buy i klassen Dryck samt hämtar indexposition i ArrayList    
+                            drycken.get(köp-1).Buy();  
                                break;
                              }
                             else 
-                            //Anropar metoden Buy i klassen Dryck samt hämtar indexposition i ArrayList    
-                            drycken.get(köp1-1).Buy();  
+                            
+                            break;
                         }
                     }
             //If-satas för val 3 av huvudmenyn         
@@ -149,12 +153,14 @@ public class AutomatUppgift {
                         //Använderns input för köpfråga sparar i en int variabel
                         köp1 = scan1.nextInt();
                             //If-sats för användarens val
-                            if (köp1 == 0) {
+                            if (köp1 == 1) {
+                                //Anropar metoden Buy i klassen Kläder samt hämtar indexposition i ArrayList
+                            kläderna.get(köp-1).Buy();  
                                break;
                              }
                             else 
-                            //Anropar metoden Buy i klassen Kläder samt hämtar indexposition i ArrayList
-                            kläderna.get(köp1-1).Buy();  
+                            
+                            break;
                          }          }                                         
             
         //villkor för när loopen för huvudmenyn avslutas
